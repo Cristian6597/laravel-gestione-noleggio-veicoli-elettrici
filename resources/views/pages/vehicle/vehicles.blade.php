@@ -6,7 +6,7 @@
     </div>
     <div class="flex justify-end w-full">
         <a class="w-64 px-4 py-2 mb-10 font-bold text-center text-white bg-black rounded cursor-pointer"
-            href="{{ url('/new_vehicle') }}">
+            href="{{ url('/vehicle/new_vehicle') }}">
             +
             Add
             New Vehicle</a>

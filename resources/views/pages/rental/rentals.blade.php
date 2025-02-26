@@ -5,6 +5,14 @@
         <p class="w-full mb-10 text-3xl font-bold text-center">Rentals</p>
     </div>
     <div class="w-full h-full list">
+        <div class="flex justify-end w-full">
+            <a class="w-64 px-4 py-2 mb-10 font-bold text-center text-white bg-black rounded cursor-pointer"
+                href="{{ url('/new_rental') }}">
+                +
+                Add
+                New Rental</a>
+
+        </div>
         <ul class="flex flex-wrap justify-center">
             @foreach ($rentals as $rental)
                 <div class="max-w-sm mb-5 overflow-hidden rounded shadow-lg">
