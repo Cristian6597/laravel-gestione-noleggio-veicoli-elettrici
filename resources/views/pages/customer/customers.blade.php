@@ -6,7 +6,7 @@
     </div>
     <div class="flex justify-end w-full">
         <a class="w-64 px-4 py-2 mb-10 font-bold text-center text-white bg-black rounded cursor-pointer"
-            href="{{ url('/new_customer') }}">
+            href="{{ route('customers.create') }}">
             +
             Add
             New Customer</a>
@@ -32,7 +32,7 @@
                             class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">License:
                             {{ $customer->license_number }}</span>
                         <div class="flex justify-end w-full">
-                            <a href="{{ url('/customer/' . $customer->id) }}"
+                            <a href="{{ route('customers.show', $customer->id) }}"
                                 class="text-blue-500 underline hover:text-blue-600">See more</a>
                         </div>
                     </div>

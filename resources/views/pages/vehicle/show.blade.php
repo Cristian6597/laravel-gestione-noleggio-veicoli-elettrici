@@ -27,5 +27,5 @@
         </div>
     </ul>
     <div class="">
-        <a href="{{ url('/vehicles') }}" class="text-blue-500 underline hover:text-blue-600">Back</a>
+        <a href="{{ route('vehicle.index') }}" class="text-blue-500 underline hover:text-blue-600">Back</a>
     @endsection

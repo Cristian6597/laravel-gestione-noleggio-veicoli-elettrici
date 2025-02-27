@@ -6,12 +6,12 @@
     </div>
     <div class="flex flex-row justify-center gap-6 mt-10 options">
         <div class="vehicles">
-            <a href="{{ url('/vehicles') }}"><span class="text-xl font-bold">Vehicles</span></a>
+            <a href="{{ route('vehicles.index') }}"><span class="text-xl font-bold">Vehicles</span></a>
         </div>
-        <div class="vehicles">
-            <a href="{{ url('/customers') }}"><span class="text-xl font-bold">Customers</span></a>
+        <div class="customers">
+            <a href="{{ route('customers.index') }}"><span class="text-xl font-bold">Customers</span></a>
         </div>
-        <div class="vehicles">
+        <div class="rentals">
             <a href="{{ url('/rentals') }}"><span class="text-xl font-bold">Rentals</span></a>
         </div>
     </div>

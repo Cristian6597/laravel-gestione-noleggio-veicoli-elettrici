@@ -6,7 +6,7 @@
     </div>
     <div class="flex justify-end w-full">
         <a class="w-64 px-4 py-2 mb-10 font-bold text-center text-white bg-black rounded cursor-pointer"
-            href="{{ url('/vehicle/new_vehicle') }}">
+            href="{{ route('vehicles.create') }}">
             +
             Add
             New Vehicle</a>
@@ -35,7 +35,7 @@
                             class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">Hourly
                             rate: {{ $vehicle->hourly_rate }}</span>
                         <div class="flex justify-end w-full">
-                            <a href="{{ url('/vehicles/' . $vehicle->id) }}"
+                            <a href="{{ route('vehicles.show', $vehicle->id) }}"
                                 class="text-blue-500 underline hover:text-blue-600">See more</a>
                         </div>
                     </div>

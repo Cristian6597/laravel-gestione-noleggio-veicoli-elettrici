@@ -6,7 +6,7 @@
         <p class="w-full mb-10 text-center">Insert new customer</p>
     </div>
     <div class="flex justify-center w-full ">
-        <form class ="w-1/3 text-center" action="{{ url('/new_customer_new') }}" method="POST">
+        <form class ="w-1/3 text-center" action="{{ route('customers.store') }}" method="POST">
             @csrf
             <div class="mb-4">
                 <label for="name" class="block mb-2 text-sm font-bold text-gray-700">Name</label>
@@ -34,7 +34,7 @@
                         type="submit">
                         Create
                     </button>
-                    <a href="{{ url('/customers') }}"
+                    <a href="{{ route('customers.index') }}"
                         class="px-4 py-2 font-bold text-white bg-black rounded focus:outline-none focus:shadow-outline">
                         Back
                     </a>
